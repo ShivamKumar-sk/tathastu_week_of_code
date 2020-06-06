@@ -27,7 +27,9 @@ def randomized_quick_sort(a, l, r):
 if __name__ == '__main__':
     n=int(input())
     a=[int(a) for a in input().split()]
+    x=a
     if len(a)==n:
         randomized_quick_sort(a, 0, len(a)-1)
-    for x in a:
-        print(x, end=' ')
+    k=a[len(a)//2]
+    print('element is', x[k]
+        
