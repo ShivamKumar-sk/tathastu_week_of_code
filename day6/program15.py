@@ -31,5 +31,5 @@ if __name__ == '__main__':
     if len(a)==n:
         randomized_quick_sort(a, 0, len(a)-1)
     k=a[len(a)//2]
-    print('element is', x[k]
+    print('element is', x[k])
         
