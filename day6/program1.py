@@ -1,19 +1,12 @@
 str='ABAABCD'
 Lst=[]
-for i in range(len(str)):
-    for j in range(i+1,len(str)):
-        if str[i]==str[j]:
-            Lst.append(str[i:j+1])
-string=''
-for i in Lst:
-    if i==i[::-1] and len(i)>len(string):
-        string=i
-print('Maximum length reversed string is:',string)    
-            
-                   
-               
-        
-        
+for i in str:
+    if str.count(i)>1:
+        Lst.append(i)
+if len(Lst)%2!=0:
+    print('we can remove',len(str)-len(Lst),'latters')
+else:
+    print('we can remove',1+len(str)-len(Lst),'latters')
     
     
     
@@ -21,4 +14,4 @@ print('Maximum length reversed string is:',string)
         
     
     
-        
+
